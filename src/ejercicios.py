@@ -4,6 +4,12 @@ def suma_matriz(matriz):
     Recibe una lista de listas y devuelve la suma de todos sus elementos.
     Incluir el código aquí para sumar los elementos de la matriz.
     """
+    sum = 0
+    for filas in matriz:
+        for dato in filas:
+            suma+= dato
+    return suma
+
     pass
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
