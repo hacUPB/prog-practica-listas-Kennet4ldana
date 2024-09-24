@@ -7,9 +7,9 @@ def suma_matriz(matriz):
     sum = 0
     for filas in matriz:
         for dato in filas:
-            suma+= dato
-    return suma
-
+            sum+= dato
+    return sum
+ 
     pass
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
@@ -58,6 +58,7 @@ def tabla_multiplicar(n):
     Recibe un número y devuelve una lista con su tabla de multiplicar del 1 al 10.
     Incluir el código aquí para generar la tabla de multiplicar.
     """
+
     pass
 
 # Ejercicio 8: Contar números negativos en una lista
