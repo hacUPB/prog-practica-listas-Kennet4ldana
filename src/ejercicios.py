@@ -4,6 +4,12 @@ def suma_matriz(matriz):
     Recibe una lista de listas y devuelve la suma de todos sus elementos.
     Incluir el código aquí para sumar los elementos de la matriz.
     """
+    sum = 0
+    for filas in matriz:
+        for dato in filas:
+            sum+= dato
+    return sum
+ 
     pass
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
@@ -40,27 +46,31 @@ def filtrar_pares(lista):
 
 # Ejercicio 6: Contar la cantidad de palabras en una frase
 def contar_palabras(frase):
-    """
-    Recibe una frase y devuelve el número de palabras.
-    Incluir el código aquí para contar las palabras en la frase.
-    """
-    pass
 
+    palabras = frase.split()
+    return len(palabras)
+
+frase = "Cristiano el mejor"
+print(f"Cantidad de palabras: {contar_palabras(frase)}")
+
+ 
 # Ejercicio 7: Crear una tabla de multiplicar
 def tabla_multiplicar(n):
     """
     Recibe un número y devuelve una lista con su tabla de multiplicar del 1 al 10.
     Incluir el código aquí para generar la tabla de multiplicar.
     """
+
     pass
 
 # Ejercicio 8: Contar números negativos en una lista
 def contar_negativos(lista):
-    """
-    Recibe una lista de números y devuelve la cantidad de números negativos.
-    Incluir el código aquí para contar los números negativos en la lista.
-    """
-    pass
+    return len([num for num in lista if num < 0])
+
+numeros = [-4, -2, 9, 0, 0, 35, -2]
+print(f"Cantidad de números negativos: {contar_negativos(numeros)}")
+    
+
 
 # Ejercicio 9: Determinar si una lista está ordenada
 def lista_ordenada(lista):
@@ -79,10 +89,9 @@ def cifrado_cesar(texto, desplazamiento):
     pass
 
 
-#Aquí comienza el progrma principal. No modifiques el código debajo de esta línea.
+#Aquí comienza el programa principal. No modifiques el código debajo de esta línea.
 def main():
     pass
-
 
 if __name__ == "__main__":
     main()
